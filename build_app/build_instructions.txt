@@ -1,0 +1,88 @@
+===============================
+ FREELANCER TIMER – BUILD GUIDE
+===============================
+
+Author: Isaac Orzech
+Project: Freelancer Timer (Triple C Services)
+Build Target: timer_v4b.py → FreelancerTimer.exe
+Platform: Windows (.exe) via PyInstaller
+
+--------------------------------
+ 1️⃣ SETUP
+--------------------------------
+Make sure you have the following in this folder:
+ - timer_v4b.py
+ - projects.json (optional: stores saved project names)
+ - clock.ico      (optional: app icon)
+ - build_instructions.txt  (this file)
+
+You DO NOT need:
+ - sessions.csv (it will be created automatically)
+ - previous version scripts
+
+--------------------------------
+ 2️⃣ INSTALL TOOLS
+--------------------------------
+Open a Command Prompt or VS Code Terminal here and run:
+
+    pip install pyinstaller
+
+(Optional: activate your venv first)
+    venv\Scripts\activate
+
+--------------------------------
+ 3️⃣ BUILD THE APP
+--------------------------------
+Run this command inside this folder:
+
+    pyinstaller --onefile --noconsole --icon=clock.ico timer_v4b.py
+
+If you don't have an icon file, run instead:
+
+    pyinstaller --onefile --noconsole timer_v4b.py
+
+--------------------------------
+ 4️⃣ FIND YOUR EXE
+--------------------------------
+After the build completes, your executable will be created here:
+
+    dist\timer_v4b.exe
+
+You can rename it to:
+
+    FreelancerTimer.exe
+
+--------------------------------
+ 5️⃣ CLEAN UP (optional)
+--------------------------------
+To delete build clutter and keep only your .exe:
+    rmdir /s /q build
+    del timer_v4b.spec
+
+--------------------------------
+ 6️⃣ DISTRIBUTE
+--------------------------------
+You can now share just this file:
+
+    dist\FreelancerTimer.exe
+
+It runs on any Windows PC (no Python needed).
+Make sure to keep projects.json next to it
+if you want to preserve saved project names.
+
+--------------------------------
+ ✅ BUILD COMPLETE!
+--------------------------------
+For updates or rebuilding later:
+- Copy your final version of timer_v4b.py here
+- Repeat steps 3–5
+
+--------------------------------
+ Version history reference:
+--------------------------------
+v1  - Start/Stop timer
+v2  - Pause/Continue
+v3  - Hourly Rate + Earnings
+v3b - Pause tracking
+v4  - Minimum Billable
+v4b - Pause + refined min logic (FINAL)
