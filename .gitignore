@@ -3,8 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Logs and CSV outputs
+# User data and outputs (root level only)
 sessions.csv
+/projects.json
 *.log
 
 # Environment files
@@ -12,11 +13,13 @@ sessions.csv
 venv/
 env/
 
-# Build and packaging
-build_app/
+# Build outputs (not source files)
+build_app/build/
+build_app/dist/
+build_app/*.exe
+build_app/*.zip
 build/
 dist/
-*.spec
 
 # OS
 .DS_Store
