@@ -1,8 +1,6 @@
 # 🕒 Freelancer Timer
 
 [![Python](https://img.shields.io/badge/Built%20with-Python%203.8+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)]()
 [![Data](https://img.shields.io/badge/Logs-CSV%20%2B%20JSON-orange.svg)]()
 
 A simple, offline **time-tracking app for freelancers**, built with **Python (Tkinter)**.
