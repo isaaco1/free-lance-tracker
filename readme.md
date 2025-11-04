@@ -11,7 +11,7 @@ It helps track client sessions, pause work, apply minimum billing, and calculate
 
 ---
 
-## 🧭 Version History
+## Version History
 
 | File | Version | Key Features |
 |------|----------|---------------|
@@ -24,7 +24,7 @@ It helps track client sessions, pause work, apply minimum billing, and calculate
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.8+
 - **GUI:** Tkinter (standard library)
@@ -35,13 +35,13 @@ No external dependencies are required.
 
 ---
 
-## 📦 Installation
+## Installation
 
-1. **Clone or download this repository:**
-   ```bash
-   git clone https://github.com/<your-username>/freelancer-timer.git
-   cd freelancer-timer
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/isaaco1/free-lance-tracker.git
+cd free-lance-tracker
+```
 
 2. *(Optional)* Create a virtual environment:
    ```bash
@@ -60,9 +60,7 @@ No external dependencies are required.
    python timer_v4b.py
    ```
 
----
-
-## 🖥️ How to Use
+## Usage
 
 1. **Project Name**  → Select or enter a new project (stored in `projects.json`).
 2. **Description**  → Optional text describing your task.
@@ -78,18 +76,14 @@ session_id, project_name, description, start_time, stop_time,
 total_duration_min, paused_duration_min, billable_min, rate_gbp, earned_gbp
 ```
 
----
-
-## 🧾 Example CSV Output
+## Example CSV Output
 
 ```
 1, "Triple C Services", "Automation task", "2025-11-03 09:00:00", "2025-11-03 09:45:00", 45.0, 5.0, 45.0, 40, 30.0
 2, "Harewood Green", "Property file setup", "2025-11-03 14:00:00", "2025-11-03 14:30:00", 30.0, 0.0, 60.0, 35, 35.0
 ```
 
----
-
-## 🧩 Folder Structure
+## Folder Structure
 
 ```
 freelancer-timer/
@@ -106,9 +100,7 @@ freelancer-timer/
 └── README.md
 ```
 
----
-
-## 🧠 Future Roadmap
+## Future Roadmap
 
 | Planned Feature | Description |
 |------------------|--------------|
@@ -117,10 +109,9 @@ freelancer-timer/
 | **v7** | Packaged `.exe` version for Windows (via PyInstaller). |
 | **v8** | Optional client grouping & statistics dashboard. |
 
----
+## Author
 
-## 👤 Author
-
-**Isaac Orzech**  
+**Isaac Orzech**  - *The Brains behind the Vibe Code*  
+[@isaaco1](https://github.com/isaaco1)
 Freelancer & Automation Developer  
 _Triple C Services Ltd — “IT Automated & Simplified”_
